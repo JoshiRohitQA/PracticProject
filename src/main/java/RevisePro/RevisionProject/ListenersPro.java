@@ -41,7 +41,7 @@ public class ListenersPro implements ITestListener{
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
-		File destination= new File("C:\\Users\\rohit.joshi\\Desktop\\EclipseWorkspace\\RevisionProject\\ScreenShots\\Passed\\TCPassed"+timeFormat+".png");
+		File destination= new File("C:\\Users\\ASUS\\eclipse-workspace\\RevisionProject\\ScreenShots\\Passed\\TCPassed"+timeFormat+".png");
 		try {
 			FileHandler.copy(source, destination);
 		} catch (IOException e) {
@@ -76,7 +76,7 @@ public class ListenersPro implements ITestListener{
 		Reporter.log("TestCase is failed");
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
-		File destination= new File("C:\\Users\\rohit.joshi\\Desktop\\EclipseWorkspace\\RevisionProject\\ScreenShots\\Failed\\TCFailed"+timeFormat+".png");
+		File destination= new File("C:\\Users\\ASUS\\eclipse-workspace\\RevisionProject\\ScreenShots\\Failed\\TCFailed"+timeFormat+".png");
 		try {
 			FileHandler.copy(source, destination);
 		} catch (IOException e) {
