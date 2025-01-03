@@ -13,10 +13,11 @@ public class DDtPro {
 	static String password;
 	
 	 void dataTest() throws EncryptedDocumentException, IOException {
-		FileInputStream fs = new FileInputStream("C:\\Users\\rohit.joshi\\Desktop\\EclipseWorkspace\\RevisionProject\\DataFetch\\Credentials.xlsx");
+		FileInputStream fs = new FileInputStream("C:\\Users\\ASUS\\eclipse-workspace\\RevisionProject\\DataFetch\\Credentials.xlsx");
 		Workbook w1=WorkbookFactory.create(fs);
 		username=w1.getSheet("Creds").getRow(1).getCell(0).getStringCellValue();
 		password=w1.getSheet("Creds").getRow(1).getCell(1).getStringCellValue();
 	}
 
 }
+
